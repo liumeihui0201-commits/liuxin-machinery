@@ -1,0 +1,3104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>义乌市刘鑫机械设备有限公司 | Yiwu Liuxin Machinery Equipment Co., Ltd.</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "PingFang SC", Arial, sans-serif; background: #111827; color: #fff; line-height: 1.8; }
+    a { text-decoration: none; }
+    .page { min-height: 100vh; width: 100%; }
+    .home-page { display: flex; flex-direction: column; background: linear-gradient(135deg, #1f2933, #111827); }
+    .home-main { flex: 1; padding: 48px 22px 36px; display: flex; align-items: center; justify-content: center; }
+    .content { width: 100%; max-width: 960px; }
+    .tag { display: inline-block; padding: 9px 16px; border: 1px solid rgba(255,255,255,0.35); border-radius: 16px; margin-bottom: 24px; color: #e5e7eb; line-height: 1.45; }
+    .tag-cn { display:block; font-size:14px; font-weight:600; letter-spacing:.5px; }
+    .tag-en { display:block; font-size:12px; color:#cbd5e1; margin-top:2px; letter-spacing:.3px; }
+    h1 { font-size: 38px; line-height: 1.25; margin-bottom: 6px; letter-spacing: 1px; }
+    .company-en { font-size: 20px; color: #d1d5db; margin-bottom: 26px; letter-spacing: 0.5px; }
+    .intro { max-width: 860px; margin-bottom: 34px; }
+    .intro-block { margin-bottom: 22px; padding-left: 16px; border-left: 3px solid #facc15; }
+    .intro-cn { font-size: 17px; color: #f3f4f6; margin-bottom: 6px; }
+    .intro-en { font-size: 14px; color: #cbd5e1; line-height: 1.65; }
+    .main-btn { display:inline-block; padding:15px 40px; background:#facc15; color:#111827; border-radius:12px; font-size:18px; font-weight:bold; text-align:center; transition:all .2s ease; }
+    .main-btn span { display:block; font-size:12px; font-weight:500; line-height:1.3; margin-top:2px; }
+    .main-btn:active { transform:scale(.98); background:#fde047; }
+
+    .overlay-page { display:none; position:fixed; inset:0; z-index:10; overflow-y:auto; background:#f5f6f8; color:#111827; }
+    .overlay-page:target { display:flex; flex-direction:column; }
+    .page-main { flex:1; padding:46px 20px 36px; background:#f5f6f8; }
+    .wrap { max-width: 980px; margin: 0 auto; }
+    .center { text-align:center; }
+    .back-btn { display:inline-block; margin-bottom:26px; color:#555; font-size:15px; text-decoration:none; }
+    .section-title { font-size:34px; margin-bottom:4px; color:#111827; }
+    .title-en { font-size:18px; color:#6b7280; margin-bottom:14px; }
+    .subtitle { font-size:16px; color:#666; margin-bottom:6px; }
+    .subtitle-en { font-size:13px; color:#8a8f98; margin-bottom:34px; }
+
+    .product-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:18px; }
+    .product-btn, .model-card { display:block; background:#fff; border:1px solid #e5e7eb; border-radius:16px; padding:24px 14px; color:#111827; box-shadow:0 8px 20px rgba(0,0,0,.06); transition:all .22s ease; }
+    .product-btn:active, .model-card:active { background:#111827; color:#fff; transform:scale(.98); }
+    .product-cn { display:block; font-size:22px; font-weight:bold; margin-bottom:4px; }
+    .product-en { display:block; font-size:13px; color:#6b7280; line-height:1.35; }
+    .product-btn:active .product-en, .model-card:active .product-en { color:#d1d5db; }
+    .product-btn.full { grid-column: span 2; }
+
+    .model-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:18px; }
+    .model-card { padding:18px; }
+    .model-thumb { width:100%; aspect-ratio:4/3; object-fit:contain; background:#fff; border-radius:14px; border:1px solid #eef0f3; margin-bottom:14px; }
+    .model-badge { display:inline-block; background:#111827; color:#facc15; padding:7px 14px; border-radius:999px; font-size:14px; font-weight:700; margin-bottom:10px; }
+    .model-desc-cn { font-size:14px; color:#374151; margin-top:10px; }
+    .model-desc-en { font-size:12px; color:#6b7280; margin-top:4px; line-height:1.5; }
+
+    .detail-card { background:#ffffff; border-radius:22px; padding:22px; box-shadow:0 10px 30px rgba(0,0,0,.08); border:1px solid #e5e7eb; }
+    .detail-image { width:100%; border-radius:18px; display:block; margin-bottom:24px; border:1px solid #eef0f3; background:#fff; }
+    .detail-title { font-size:32px; color:#111827; margin-bottom:4px; line-height:1.25; }
+    .detail-title-en { font-size:17px; color:#6b7280; margin-bottom:20px; }
+    .detail-intro { margin-bottom:24px; padding-left:14px; border-left:3px solid #facc15; }
+    .detail-intro-cn { font-size:16px; color:#374151; margin-bottom:8px; }
+    .detail-intro-en { font-size:13px; color:#6b7280; line-height:1.65; }
+    .section-heading { font-size:21px; color:#111827; margin:26px 0 12px; }
+    .section-heading span { display:block; font-size:13px; color:#6b7280; font-weight:400; margin-top:2px; }
+    .param-table { width:100%; border-collapse:collapse; border-radius:14px; overflow:hidden; border:1px solid #e5e7eb; background:#fff; }
+    .param-table th, .param-table td { padding:12px 10px; border-bottom:1px solid #e5e7eb; text-align:left; font-size:14px; vertical-align:top; }
+    .param-table th { background:#111827; color:#ffffff; font-weight:700; }
+    .param-table tr:last-child td { border-bottom:none; }
+    .cn-en { display:block; color:#6b7280; font-size:12px; margin-top:2px; line-height:1.35; }
+    .features { display:grid; grid-template-columns:repeat(2, 1fr); gap:14px; margin-top:12px; }
+    .feature-item { background:#f9fafb; border:1px solid #e5e7eb; border-radius:14px; padding:15px; }
+    .feature-cn { font-size:16px; font-weight:700; color:#111827; }
+    .feature-en { font-size:13px; color:#6b7280; margin-top:3px; }
+
+    .bottom-back-wrap {
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    .bottom-back-btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: #111827;
+      color: #ffffff;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+    }
+
+    .bottom-back-btn span {
+      display: block;
+      font-size: 11px;
+      color: #d1d5db;
+      font-weight: 400;
+      margin-top: 2px;
+      line-height: 1.2;
+    }
+
+    .bottom-back-btn:active {
+      transform: scale(0.98);
+      background: #1f2937;
+    }
+
+footer { padding:20px 16px 22px; text-align:center; background:#111827; color:#d1d5db; font-size:15px; letter-spacing:1px; }
+    .footer-en { display:block; font-size:12px; color:#9ca3af; margin-top:4px; letter-spacing:.3px; }
+
+    @media (max-width: 700px) {
+      .home-main { padding:40px 18px 30px; align-items:flex-start; }
+      h1 { font-size:28px; }
+      .company-en { font-size:16px; }
+      .intro-block { padding-left:12px; }
+      .intro-cn { font-size:15px; }
+      .intro-en { font-size:12.5px; }
+      .main-btn { width:100%; font-size:17px; }
+      .page-main { padding:38px 18px 30px; }
+      .section-title { font-size:28px; }
+      .title-en { font-size:16px; }
+      .product-grid, .model-grid, .features { grid-template-columns:1fr; }
+      .product-btn.full { grid-column: span 1; }
+      .detail-card { padding:16px; border-radius:18px; }
+      .detail-title { font-size:26px; }
+      .detail-title-en { font-size:15px; }
+      .param-table th, .param-table td { padding:10px 8px; font-size:12.5px; }
+    }
+
+    /* 首页重新设计：明亮、轻盈、专业 */
+    .home-page {
+      display: flex;
+      flex-direction: column;
+      background:
+        radial-gradient(circle at 10% 8%, rgba(250,204,21,0.20), transparent 28%),
+        linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+      color: #111827;
+    }
+
+    .home-main {
+      flex: 1;
+      padding: 34px 18px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .home-shell {
+      width: 100%;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+
+    .home-topline {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 8px 14px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+      margin-bottom: 16px;
+    }
+
+    .home-topline span {
+      font-size: 14px;
+      color: #111827;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .home-topline em {
+      font-style: normal;
+      font-size: 11px;
+      color: #6b7280;
+      line-height: 1.2;
+    }
+
+    .home-hero-card {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 22px;
+      background: rgba(255,255,255,0.92);
+      border: 1px solid #e5e7eb;
+      border-radius: 28px;
+      padding: 34px;
+      box-shadow: 0 18px 45px rgba(15,23,42,0.10);
+      backdrop-filter: blur(8px);
+    }
+
+    .home-label {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #111827;
+      color: #facc15;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .home-left h1 {
+      color: #111827;
+      font-size: 38px;
+      line-height: 1.18;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .home-left .company-en {
+      color: #6b7280;
+      font-size: 18px;
+      margin-bottom: 20px;
+      line-height: 1.35;
+    }
+
+    .home-slogan {
+      font-size: 23px;
+      color: #111827;
+      font-weight: 800;
+      line-height: 1.45;
+      margin-bottom: 6px;
+    }
+
+    .home-slogan-en {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+      max-width: 620px;
+      margin-bottom: 24px;
+    }
+
+    .main-btn {
+      display: inline-block;
+      padding: 14px 34px;
+      background: #facc15;
+      color: #111827;
+      border-radius: 14px;
+      font-size: 17px;
+      font-weight: 800;
+      text-align: center;
+      box-shadow: 0 10px 22px rgba(250,204,21,0.28);
+      transition: all 0.2s ease;
+    }
+
+    .main-btn span {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-top: 2px;
+      color: #4b5563;
+    }
+
+    .main-btn:active {
+      transform: scale(0.98);
+      background: #fde047;
+    }
+
+    .home-right {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .service-card.strong {
+      background: #111827;
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 10px 28px rgba(15,23,42,0.16);
+    }
+
+    .service-card.strong strong {
+      display: block;
+      font-size: 22px;
+      margin-bottom: 3px;
+    }
+
+    .service-card.strong span {
+      color: #d1d5db;
+      font-size: 13px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .service-item {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 16px 12px;
+      min-height: 86px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .service-item b {
+      font-size: 16px;
+      color: #111827;
+      margin-bottom: 2px;
+    }
+
+    .service-item span {
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .home-info-card {
+      margin-top: 18px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 24px;
+      padding: 24px 28px;
+      box-shadow: 0 12px 32px rgba(15,23,42,0.07);
+    }
+
+    .home-info-card .intro-block {
+      margin-bottom: 18px;
+      padding-left: 14px;
+      border-left: 3px solid #facc15;
+    }
+
+    .home-info-card .intro-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .home-info-card .intro-cn {
+      font-size: 16px;
+      color: #1f2937;
+      margin-bottom: 5px;
+      line-height: 1.75;
+    }
+
+    .home-info-card .intro-en {
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 760px) {
+      .home-main {
+        padding: 26px 15px 22px;
+        align-items: flex-start;
+      }
+
+      .home-topline {
+        border-radius: 16px;
+      }
+
+      .home-hero-card {
+        grid-template-columns: 1fr;
+        padding: 22px;
+        border-radius: 24px;
+        gap: 18px;
+      }
+
+      .home-left h1 {
+        font-size: 30px;
+      }
+
+      .home-left .company-en {
+        font-size: 15px;
+      }
+
+      .home-slogan {
+        font-size: 20px;
+      }
+
+      .main-btn {
+        width: 100%;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .service-item {
+        min-height: 74px;
+        padding: 13px 10px;
+      }
+
+      .service-item b {
+        font-size: 14px;
+      }
+
+      .home-info-card {
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      .home-info-card .intro-cn {
+        font-size: 15px;
+      }
+
+      .home-info-card .intro-en {
+        font-size: 12.5px;
+      }
+    }
+
+  
+    /* 叉车车型卡片强制增加间隔（修正版） */
+    #forklift-models .compact-grid {
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      column-gap: 22px !important;
+      row-gap: 34px !important;
+      align-items: start !important;
+    }
+
+    #forklift-models .model-card {
+      display: block !important;
+      margin: 0 0 10px 0 !important;
+      padding: 20px 14px 26px !important;
+      border-radius: 22px !important;
+      border: 1px solid #e5e7eb !important;
+      background: #ffffff !important;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08) !important;
+    }
+
+    #forklift-models .model-thumb {
+      margin-bottom: 14px !important;
+      border-radius: 18px !important;
+      background: #fafafa !important;
+      border: 1px solid #f0f0f0 !important;
+      padding: 10px !important;
+    }
+
+    #forklift-models .product-cn {
+      margin-top: 6px !important;
+    }
+
+    #forklift-models .product-en {
+      margin-top: 4px !important;
+    }
+
+    @media (max-width: 1000px) {
+      #forklift-models .compact-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        column-gap: 20px !important;
+        row-gap: 30px !important;
+      }
+    }
+
+    @media (max-width: 700px) {
+      #forklift-models .compact-grid {
+        display: block !important;
+      }
+
+      #forklift-models .model-card {
+        margin: 0 0 28px 0 !important;
+        padding: 18px 14px 24px !important;
+      }
+    }
+
+</style>
+</head>
+<body>
+  
+  <section id="home" class="page home-page">
+    <main class="home-main">
+      <div class="home-shell">
+
+        <div class="home-topline">
+          <span>机械设备维修 · 保养 · 售后服务</span>
+          <em>Maintenance · Repair · After-sales Service</em>
+        </div>
+
+        <div class="home-hero-card">
+          <div class="home-left">
+            <div class="home-label">专业机械设备服务商</div>
+
+            <h1>刘鑫机械设备有限公司</h1>
+            <div class="company-en">Yiwu Liuxin Machinery Equipment Co., Ltd.</div>
+
+            <p class="home-slogan">
+              让设备稳定运行，让客户使用更安心。
+            </p>
+            <p class="home-slogan-en">
+              Stable equipment operation, reliable service, and easier business for customers.
+            </p>
+
+            <a class="main-btn" href="#products">
+              了解产品
+              <span>View Products</span>
+            </a>
+          </div>
+
+          <div class="home-right">
+            <div class="service-card strong">
+              <strong>核心服务</strong>
+              <span>Core Services</span>
+            </div>
+
+            <div class="service-grid">
+              <div class="service-item">
+                <b>设备检查</b>
+                <span>Inspection</span>
+              </div>
+              <div class="service-item">
+                <b>故障处理</b>
+                <span>Troubleshooting</span>
+              </div>
+              <div class="service-item">
+                <b>日常维护</b>
+                <span>Maintenance</span>
+              </div>
+              <div class="service-item">
+                <b>售后保障</b>
+                <span>After-sales Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-info-card">
+          <div class="intro-block">
+            <div class="intro-cn">
+              义乌市刘鑫机械设备有限公司是一家专注于机械设备维修、保养与售后服务的企业。
+            </div>
+            <div class="intro-en">
+              Yiwu Liuxin Machinery Equipment Co., Ltd. is a service-oriented company specializing in machinery repair, maintenance, and after-sales support.
+            </div>
+          </div>
+
+          <div class="intro-block">
+            <div class="intro-cn">
+              公司主要面向搅拌机、农用装载机、小型拖拉机等机械设备用户，提供设备检查、故障处理、日常维护、售后保障等服务。
+            </div>
+            <div class="intro-en">
+              We mainly serve users of mixers, agricultural loaders, small tractors, and related machinery, providing equipment inspection, troubleshooting, daily maintenance, and service support.
+            </div>
+          </div>
+
+          <div class="intro-block">
+            <div class="intro-cn">
+              对于客户来说，设备能否稳定运行，直接关系到施工进度、生产效率和使用成本。
+            </div>
+            <div class="intro-en">
+              For customers, stable equipment operation directly affects project progress, production efficiency, and operating costs.
+            </div>
+          </div>
+
+          <div class="intro-block">
+            <div class="intro-cn">
+              刘鑫机械设备始终以“减少设备故障、提升使用效率、降低维修成本”为服务目标，帮助客户及时发现问题、解决问题。
+            </div>
+            <div class="intro-en">
+              Our goal is to reduce equipment failures, improve operating efficiency, and lower maintenance costs by helping customers identify and solve problems in time.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+
+  <section id="products" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap center">
+        <a class="back-btn" href="#home">← 返回首页 / Back to Home</a>
+        <h2 class="section-title">了解产品</h2>
+        <div class="title-en">View Products</div>
+        <p class="subtitle">根据您的设备类型，选择对应产品或服务方向</p>
+        <p class="subtitle-en">Select the product or service category according to your equipment type.</p>
+        <div class="product-grid">
+          <a class="product-btn" href="#loader-models"><span class="product-cn">装载机</span><span class="product-en">Loader</span></a>
+          
+          <a class="product-btn" href="#forklift-models"><span class="product-cn">叉车</span><span class="product-en">Forklift</span></a>
+          <a class="product-btn" href="#"><span class="product-cn">三轮摩托车</span><span class="product-en">Three-wheeled Motorcycle</span></a>
+          <a class="product-btn" href="#"><span class="product-cn">电动手推车</span><span class="product-en">Electric Hand Cart</span></a>
+          <a class="product-btn full" href="#"><span class="product-cn">其他产品</span><span class="product-en">Other Products</span></a>
+        </div>
+      </div>
+
+          <div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#home">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+    </main>
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="loader-models" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap center">
+        <a class="back-btn" href="#products">← 返回产品列表 / Back to Products</a>
+        <h2 class="section-title">装载机车型选择</h2>
+        <div class="title-en">Loader Model Selection</div>
+        <p class="subtitle">请选择您想了解的装载机车型</p>
+        <p class="subtitle-en">Please select the loader model you would like to view.</p>
+        <div class="model-grid">
+          <a class="model-card" href="#loader-g38">
+            <img class="model-thumb" src="images/img_001.png" alt="G38 Loader" />
+            <div class="model-badge">G38</div>
+            <span class="product-cn">G38 装载机</span>
+            <span class="product-en">G38 Loader</span>
+          </a>
+          <a class="model-card" href="#loader-zl9500">
+            <img class="model-thumb" src="images/img_002.png" alt="ZL9500 Loader" />
+            <div class="model-badge">ZL9500</div>
+            <span class="product-cn">ZL9500 装载机</span>
+            <span class="product-en">ZL9500 Loader</span>
+          </a>
+
+          <a class="model-card" href="#loader-zl946">
+            <img class="model-thumb" src="images/img_003.png" alt="ZL946 Loader" />
+            <div class="model-badge">ZL946</div>
+            <span class="product-cn">ZL946 装载机</span>
+            <span class="product-en">ZL946 Loader</span>
+          </a>
+
+          <a class="model-card" href="#loader-zl939e">
+            <img class="model-thumb" src="images/img_004.png" alt="ZL939E Loader" />
+            <div class="model-badge">ZL939E</div>
+            <span class="product-cn">ZL939E 装载机</span>
+            <span class="product-en">ZL939E Loader</span>
+          </a>
+
+          <a class="model-card" href="#loader-zl939f">
+            <img class="model-thumb" src="images/img_004.png" alt="ZL939F Loader" />
+            <div class="model-badge">ZL939F</div>
+            <span class="product-cn">ZL939F 装载机</span>
+            <span class="product-en">ZL939F Loader</span>
+          </a>
+
+          <a class="model-card" href="#loader-q36">
+            <img class="model-thumb" src="images/img_005.png" alt="Q36 Loader" />
+            <div class="model-badge">Q36</div>
+            <span class="product-cn">Q36 装载机</span>
+            <span class="product-en">Q36 Loader</span>
+          </a>
+
+          <a class="model-card" href="#loader-q38">
+            <img class="model-thumb" src="images/img_005.png" alt="Q38 Loader" />
+            <div class="model-badge">Q38</div>
+            <span class="product-cn">Q38 装载机</span>
+            <span class="product-en">Q38 Loader</span>
+          </a>
+
+          <a class="model-card" href="#loader-oy26-oy26p">
+            <img class="model-thumb" src="images/img_006.png" alt="OY26 / OY26P Loader" />
+            <div class="model-badge">OY26/OY26P</div>
+            <span class="product-cn">OY26 / OY26P 装载机</span>
+            <span class="product-en">OY26 / OY26P Loader</span>
+          </a>
+
+          <a class="model-card" href="#loader-b20">
+            <img class="model-thumb" src="images/img_007.png" alt="B20 Loader" />
+            <div class="model-badge">B20</div>
+            <span class="product-cn">B20 装载机</span>
+            <span class="product-en">B20 Loader</span>
+          </a>
+
+          <a class="model-card" href="#loader-b30">
+            <img class="model-thumb" src="images/img_007.png" alt="B30 Loader" />
+            <div class="model-badge">B30</div>
+            <span class="product-cn">B30 装载机</span>
+            <span class="product-en">B30 Loader</span>
+          </a>
+
+          <a class="model-card" href="#loader-zl936z">
+            <img class="model-thumb" src="images/img_008.png" alt="ZL936Z Loader" />
+            <div class="model-badge">ZL936Z</div>
+            <span class="product-cn">ZL936Z 装载机</span>
+            <span class="product-en">ZL936Z Loader</span>
+          </a>
+
+          <a class="model-card" href="#loader-zl936zp">
+            <img class="model-thumb" src="images/img_008.png" alt="ZL936ZP Loader" />
+            <div class="model-badge">ZL936ZP</div>
+            <span class="product-cn">ZL936ZP 装载机</span>
+            <span class="product-en">ZL936ZP Loader</span>
+          </a>
+        </div>
+      </div>
+
+          <div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#products">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+    </main>
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="loader-g38" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_001.png" alt="G38 Loader 装载机产品图" />
+          <div class="model-badge">产品型号 / Model：G38</div>
+          <h2 class="detail-title">G38 装载机</h2>
+          <div class="detail-title-en">G38 Loader</div>
+          <div class="detail-intro">
+            <div class="detail-intro-cn">这是一款明宇重工（MYZG）G38 装载机，适用于工程作业、农业装卸、场地转运等使用场景。整机额定载重 2200kg，额定斗容 2.12m³，具有较强的装卸能力和作业效率。</div>
+            <div class="detail-intro-en">This is the MYZG G38 Loader, suitable for construction work, agricultural loading, material handling, and site transportation. With a rated load of 2200 kg and a rated bucket capacity of 2.12 m³, it delivers strong loading capability and efficient operation.</div>
+          </div>
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead><tr><th>项目 / Category</th><th>内容 / Details</th></tr></thead>
+            <tbody>
+              <tr><td>产品名称 <span class="cn-en">Product Name</span></td><td>G38 装载机 <span class="cn-en">G38 Loader</span></td></tr>
+              <tr><td>品牌 <span class="cn-en">Brand</span></td><td>明宇重工 / MYZG</td></tr>
+              <tr><td>产品类别 <span class="cn-en">Product Category</span></td><td>装载机 <span class="cn-en">Loader</span></td></tr>
+
+                          <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+</tbody>
+          </table>
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead><tr><th>项目 / Category</th><th>单位 / Unit</th><th>参数 / Parameter</th></tr></thead>
+            <tbody>
+              <tr><td>额定载重 <span class="cn-en">Rated Load</span></td><td>kg</td><td>2200</td></tr>
+              <tr><td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td><td>m³</td><td>2.12</td></tr>
+              <tr><td>工作质量 <span class="cn-en">Operating Weight</span></td><td>kg</td><td>6160</td></tr>
+              <tr><td>卸载高度 <span class="cn-en">Dump Height</span></td><td>mm</td><td>4500</td></tr>
+              <tr><td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td><td>mm</td><td>3550</td></tr>
+              <tr><td>功率范围 <span class="cn-en">Power</span></td><td>kW</td><td>80–90</td></tr>
+              <tr><td>外形尺寸 <span class="cn-en">Dimensions</span></td><td>mm</td><td>7200 × 2250 × 3100</td></tr>
+            </tbody>
+          </table>
+<div class="feature-en">Address</div></div>
+          </div>
+
+                    <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="loader-zl9500" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_002.png" alt="ZL9500 Loader 装载机产品图" />
+          <div class="model-badge">产品型号 / Model：ZL9500</div>
+          <h2 class="detail-title">ZL9500 装载机</h2>
+          <div class="detail-title-en">ZL9500 Loader</div>
+          <div class="detail-intro">
+            <div class="detail-intro-cn">这是一款明宇重工（MYZG）ZL9500 装载机，适用于装卸、转运、工程作业等多种使用场景。整机额定载重 2800kg，额定斗容 1.5m³，具备更强动力和稳定作业表现。</div>
+            <div class="detail-intro-en">The ZL9500 Loader is suitable for construction work, material loading, site transportation, and other working scenarios. With a rated load of 2800 kg, a rated bucket capacity of 1.5 m³, an operating weight of 6800 kg, and a power range of 92–103 kW, it offers strong loading capacity, stable performance, and efficient operation.</div>
+          </div>
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead><tr><th>项目 / Category</th><th>内容 / Details</th></tr></thead>
+            <tbody>
+              <tr><td>产品名称 <span class="cn-en">Product Name</span></td><td>ZL9500 装载机 <span class="cn-en">ZL9500 Loader</span></td></tr>
+              <tr><td>品牌 <span class="cn-en">Brand</span></td><td>明宇重工 / MYZG</td></tr>
+              <tr><td>产品类别 <span class="cn-en">Product Category</span></td><td>装载机 <span class="cn-en">Loader</span></td></tr>
+              <tr><td>产品优势 <span class="cn-en">Product Advantages</span></td><td>动力更强、装卸高效、适合多种作业场景 <span class="cn-en">Stronger power, efficient loading, suitable for multiple work environments</span></td></tr>
+                          <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+</tbody>
+          </table>
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead><tr><th>项目 / Category</th><th>单位 / Unit</th><th>参数 / Parameter</th></tr></thead>
+            <tbody>
+              <tr><td>额定载重 <span class="cn-en">Rated Load</span></td><td>kg</td><td>2800</td></tr>
+              <tr><td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td><td>m³</td><td>1.5</td></tr>
+              <tr><td>工作质量 <span class="cn-en">Operating Weight</span></td><td>kg</td><td>6800</td></tr>
+              <tr><td>卸载高度 <span class="cn-en">Dump Height</span></td><td>mm</td><td>3600</td></tr>
+              <tr><td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td><td>mm</td><td>3350</td></tr>
+              <tr><td>功率范围 <span class="cn-en">Power</span></td><td>kW</td><td>92–103</td></tr>
+              <tr><td>外形尺寸 <span class="cn-en">Dimensions</span></td><td>mm</td><td>7130 × 2350 × 3230</td></tr>
+            </tbody>
+          </table>
+
+                    <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="loader-zl946" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_003.png" alt="ZL946 Loader 装载机产品图" />
+
+          <div class="model-badge">产品型号 / Model：ZL946</div>
+
+          <h2 class="detail-title">ZL946 装载机</h2>
+          <div class="detail-title-en">ZL946 Loader</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">
+              ZL946 装载机是一款适用于工程施工、物料装卸、场地转运等作业场景的机械设备。整机额定载重 2400kg，额定斗容 1.2m³，工作质量 5840kg，功率范围 85–90kW，具备灵活转向、稳定作业和较高装卸效率。
+            </div>
+            <div class="detail-intro-en">
+              The ZL946 Loader is suitable for construction work, material loading, site transportation, and other operating scenarios. With a rated load of 2400 kg, a rated bucket capacity of 1.2 m³, an operating weight of 5840 kg, and a power range of 85–90 kW, it offers flexible turning, stable operation, and efficient loading performance.
+            </div>
+          </div>
+
+          <h3 class="section-heading">
+            产品信息
+            <span>Product Information</span>
+          </h3>
+
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>ZL946 装载机 <span class="cn-en">ZL946 Loader</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>装载机 <span class="cn-en">Loader</span></td>
+              </tr>
+              <tr>
+                <td>产品优势 <span class="cn-en">Product Advantages</span></td>
+                <td>灵活转向、稳定作业、装卸高效 <span class="cn-en">Flexible turning, stable operation, efficient loading</span></td>
+              </tr>
+                          <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+</tbody>
+          </table>
+
+          <h3 class="section-heading">
+            产品参数
+            <span>Product Parameters</span>
+          </h3>
+
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定载重 <span class="cn-en">Rated Load</span></td>
+                <td>kg</td>
+                <td>2400</td>
+              </tr>
+              <tr>
+                <td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td>
+                <td>m³</td>
+                <td>1.2</td>
+              </tr>
+              <tr>
+                <td>工作质量 <span class="cn-en">Operating Weight</span></td>
+                <td>kg</td>
+                <td>5840</td>
+              </tr>
+              <tr>
+                <td>卸载高度 <span class="cn-en">Dump Height</span></td>
+                <td>mm</td>
+                <td>3600</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>3380</td>
+              </tr>
+              <tr>
+                <td>功率范围 <span class="cn-en">Power</span></td>
+                <td>kW</td>
+                <td>85–90</td>
+              </tr>
+              <tr>
+                <td>外形尺寸 <span class="cn-en">Dimensions</span></td>
+                <td>mm</td>
+                <td>6730 × 2225 × 2885</td>
+              </tr>
+            </tbody>
+          </table>
+
+                    <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+
+  <section id="loader-zl939e" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_004.png" alt="ZL939E Loader 装载机产品图" />
+
+          <div class="model-badge">产品型号 / Model：ZL939E</div>
+
+          <h2 class="detail-title">ZL939E 装载机</h2>
+          <div class="detail-title-en">ZL939E Loader</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">
+              ZL939E 装载机是一款适用于工程施工、物料装卸、场地转运等作业场景的机械设备。整机额定载重 1800kg，额定斗容 0.75m³，工作质量 4670kg，功率范围 80–90kW，具备灵活转向、稳定作业和较高装卸效率。
+            </div>
+            <div class="detail-intro-en">
+              The ZL939E Loader is suitable for construction work, material loading, site transportation, and other operating scenarios. With a rated load of 1800 kg, a rated bucket capacity of 0.75 m³, an operating weight of 4670 kg, and a power range of 80–90 kW, it offers flexible turning, stable operation, and efficient loading performance.
+            </div>
+          </div>
+<h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>ZL939E 装载机 <span class="cn-en">ZL939E Loader</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>装载机 <span class="cn-en">Loader</span></td>
+              </tr>
+              <tr>
+                <td>产品优势 <span class="cn-en">Product Advantages</span></td>
+                <td>灵活转向、稳定作业、装卸高效 <span class="cn-en">Flexible turning, stable operation, efficient loading</span></td>
+              </tr>
+
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>额定载重 <span class="cn-en">Rated Load</span></td><td>kg</td><td>1800</td></tr>
+              <tr><td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td><td>m³</td><td>0.75</td></tr>
+              <tr><td>工作质量 <span class="cn-en">Operating Weight</span></td><td>kg</td><td>4670</td></tr>
+              <tr><td>卸载高度 <span class="cn-en">Dump Height</span></td><td>mm</td><td>3500</td></tr>
+              <tr><td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td><td>mm</td><td>2970</td></tr>
+              <tr><td>功率范围 <span class="cn-en">Power</span></td><td>kW</td><td>80–90</td></tr>
+              <tr><td>外形尺寸 <span class="cn-en">Dimensions</span></td><td>mm</td><td>6100 × 2060 × 2840</td></tr>
+            </tbody>
+          </table>
+
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="loader-zl939f" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_004.png" alt="ZL939F Loader 装载机产品图" />
+
+          <div class="model-badge">产品型号 / Model：ZL939F</div>
+
+          <h2 class="detail-title">ZL939F 装载机</h2>
+          <div class="detail-title-en">ZL939F Loader</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">
+              ZL939F 装载机是一款适用于工程作业、物料装卸、场地转运等场景的机械设备。整机额定载重 2000kg，额定斗容 1m³，工作质量 5000kg，功率范围 80–90kW，具备较强的装卸能力、稳定性和作业效率。
+            </div>
+            <div class="detail-intro-en">
+              The ZL939F Loader is suitable for construction work, material loading, site transportation, and other working scenarios. With a rated load of 2000 kg, a rated bucket capacity of 1 m³, an operating weight of 5000 kg, and a power range of 80–90 kW, it offers strong loading capacity, stable performance, and efficient operation.
+            </div>
+          </div>
+<h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>ZL939F 装载机 <span class="cn-en">ZL939F Loader</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>装载机 <span class="cn-en">Loader</span></td>
+              </tr>
+              <tr>
+                <td>产品优势 <span class="cn-en">Product Advantages</span></td>
+                <td>装卸高效、性能稳定、适合多种工况 <span class="cn-en">Efficient loading, stable performance, suitable for multiple work environments</span></td>
+              </tr>
+
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>额定载重 <span class="cn-en">Rated Load</span></td><td>kg</td><td>2000</td></tr>
+              <tr><td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td><td>m³</td><td>1</td></tr>
+              <tr><td>工作质量 <span class="cn-en">Operating Weight</span></td><td>kg</td><td>5000</td></tr>
+              <tr><td>卸载高度 <span class="cn-en">Dump Height</span></td><td>mm</td><td>3500</td></tr>
+              <tr><td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td><td>mm</td><td>2600</td></tr>
+              <tr><td>功率范围 <span class="cn-en">Power</span></td><td>kW</td><td>80–90</td></tr>
+              <tr><td>外形尺寸 <span class="cn-en">Dimensions</span></td><td>mm</td><td>6200 × 2210 × 2880</td></tr>
+            </tbody>
+          </table>
+
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+
+  <section id="forklift-models" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap center">
+        <a class="back-btn" href="#products">← 返回产品列表 / Back to Products</a>
+        <h2 class="section-title">叉车车型选择</h2>
+        <div class="title-en">Forklift Model Selection</div>
+        <p class="subtitle">请选择您想了解的叉车型号</p>
+        <p class="subtitle-en">Please select the forklift model you would like to view.</p>
+
+        <div class="compact-grid">
+
+          <a class="model-card" href="#forklift-m30">
+            <img class="model-thumb" src="images/img_009.png" alt="M30 Diesel Forklift" />
+            <div class="model-badge">M30</div>
+            <span class="product-cn">M30 内燃叉车</span>
+            <span class="product-en">M30 Diesel Forklift</span>
+          </a>
+
+          <a class="model-card" href="#forklift-m35">
+            <img class="model-thumb" src="images/img_010.png" alt="M35 Diesel Forklift" />
+            <div class="model-badge">M35</div>
+            <span class="product-cn">M35 内燃叉车</span>
+            <span class="product-en">M35 Diesel Forklift</span>
+          </a>
+
+          <a class="model-card" href="#forklift-m38">
+            <img class="model-thumb" src="images/img_011.png" alt="M38 Diesel Forklift" />
+            <div class="model-badge">M38</div>
+            <span class="product-cn">M38 内燃叉车</span>
+            <span class="product-en">M38 Diesel Forklift</span>
+          </a>
+
+          <a class="model-card" href="#forklift-m50">
+            <img class="model-thumb" src="images/img_012.png" alt="M50 Diesel Forklift" />
+            <div class="model-badge">M50</div>
+            <span class="product-cn">M50 内燃叉车</span>
+            <span class="product-en">M50 Diesel Forklift</span>
+          </a>
+
+          <a class="model-card" href="#forklift-m80">
+            <img class="model-thumb" src="images/img_013.png" alt="M80 Diesel Forklift" />
+            <div class="model-badge">M80</div>
+            <span class="product-cn">M80 内燃叉车</span>
+            <span class="product-en">M80 Diesel Forklift</span>
+          </a>
+
+          <a class="model-card" href="#forklift-y35">
+            <img class="model-thumb" src="images/img_014.png" alt="Y35 Off-road Forklift" />
+            <div class="model-badge">Y35</div>
+            <span class="product-cn">Y35 越野叉车</span>
+            <span class="product-en">Y35 Off-road Forklift</span>
+          </a>
+
+          <a class="model-card" href="#forklift-y45">
+            <img class="model-thumb" src="images/img_015.png" alt="Y45 Off-road Forklift" />
+            <div class="model-badge">Y45</div>
+            <span class="product-cn">Y45 越野叉车</span>
+            <span class="product-en">Y45 Off-road Forklift</span>
+          </a>
+
+          <a class="model-card" href="#forklift-y50">
+            <img class="model-thumb" src="images/img_016.png" alt="Y50 Off-road Forklift" />
+            <div class="model-badge">Y50</div>
+            <span class="product-cn">Y50 越野叉车</span>
+            <span class="product-en">Y50 Off-road Forklift</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="bottom-back-wrap">
+        <a class="bottom-back-btn" href="#products">
+          返回上一级
+          <span>Back to Previous Level</span>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="forklift-m30" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#forklift-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_009.png" alt="M30 内燃叉车 产品图" />
+
+          <div class="model-badge">产品型号 / Model：M30</div>
+
+          <h2 class="detail-title">M30 内燃叉车</h2>
+          <div class="detail-title-en">M30 Diesel Forklift</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">M30 内燃叉车适用于工厂、仓库、物流装卸等场景，额定起重量 3000kg，操作灵活，适合常规搬运作业。</div>
+            <div class="detail-intro-en">The M30 diesel forklift is suitable for factories, warehouses, and logistics handling. With a rated lifting capacity of 3000 kg, it provides flexible operation for routine transport tasks.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>M30 内燃叉车 <span class="cn-en">M30 Diesel Forklift</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>内燃叉车 <span class="cn-en">Diesel Forklift</span></td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>柴油 Diesel</td>
+              </tr>
+            
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+</tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定起重量 <span class="cn-en">Rated Lifting Capacity</span></td>
+                <td>kg</td>
+                <td>3000</td>
+              </tr>
+              <tr>
+                <td>载荷中心距 <span class="cn-en">Load Center Distance</span></td>
+                <td>mm</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>2520</td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>-</td>
+                <td>柴油 Diesel</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+
+          <div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#forklift-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="forklift-m35" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#forklift-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_010.png" alt="M35 内燃叉车 产品图" />
+
+          <div class="model-badge">产品型号 / Model：M35</div>
+
+          <h2 class="detail-title">M35 内燃叉车</h2>
+          <div class="detail-title-en">M35 Diesel Forklift</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">M35 内燃叉车适用于物料搬运、仓储装卸等场景，额定起重量 3500kg，兼顾稳定性与作业效率。</div>
+            <div class="detail-intro-en">The M35 diesel forklift is suitable for material handling and warehouse loading. With a rated lifting capacity of 3500 kg, it balances stability and working efficiency.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>M35 内燃叉车 <span class="cn-en">M35 Diesel Forklift</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>内燃叉车 <span class="cn-en">Diesel Forklift</span></td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>柴油 Diesel</td>
+              </tr>
+            
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+</tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定起重量 <span class="cn-en">Rated Lifting Capacity</span></td>
+                <td>kg</td>
+                <td>3500</td>
+              </tr>
+              <tr>
+                <td>载荷中心距 <span class="cn-en">Load Center Distance</span></td>
+                <td>mm</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>2580</td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>-</td>
+                <td>柴油 Diesel</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+
+          <div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#forklift-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="forklift-m38" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#forklift-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_011.png" alt="M38 内燃叉车 产品图" />
+
+          <div class="model-badge">产品型号 / Model：M38</div>
+
+          <h2 class="detail-title">M38 内燃叉车</h2>
+          <div class="detail-title-en">M38 Diesel Forklift</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">M38 内燃叉车适用于仓储搬运、工地转运等作业场景，额定起重量 3800kg，具备良好的承载能力。</div>
+            <div class="detail-intro-en">The M38 diesel forklift is suitable for warehouse transport and site handling. With a rated lifting capacity of 3800 kg, it offers solid loading capability.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>M38 内燃叉车 <span class="cn-en">M38 Diesel Forklift</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>内燃叉车 <span class="cn-en">Diesel Forklift</span></td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>柴油 Diesel</td>
+              </tr>
+            
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+</tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定起重量 <span class="cn-en">Rated Lifting Capacity</span></td>
+                <td>kg</td>
+                <td>3800</td>
+              </tr>
+              <tr>
+                <td>载荷中心距 <span class="cn-en">Load Center Distance</span></td>
+                <td>mm</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>2580</td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>-</td>
+                <td>柴油 Diesel</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+
+          <div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#forklift-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="forklift-m50" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#forklift-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_012.png" alt="M50 内燃叉车 产品图" />
+
+          <div class="model-badge">产品型号 / Model：M50</div>
+
+          <h2 class="detail-title">M50 内燃叉车</h2>
+          <div class="detail-title-en">M50 Diesel Forklift</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">M50 内燃叉车适用于重载搬运、工厂装卸等场景，额定起重量 5000kg，适合中大型搬运作业。</div>
+            <div class="detail-intro-en">The M50 diesel forklift is suitable for heavy-duty material handling and factory loading. With a rated lifting capacity of 5000 kg, it is ideal for medium and large transport tasks.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>M50 内燃叉车 <span class="cn-en">M50 Diesel Forklift</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>内燃叉车 <span class="cn-en">Diesel Forklift</span></td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>柴油 Diesel</td>
+              </tr>
+            
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+</tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定起重量 <span class="cn-en">Rated Lifting Capacity</span></td>
+                <td>kg</td>
+                <td>5000</td>
+              </tr>
+              <tr>
+                <td>载荷中心距 <span class="cn-en">Load Center Distance</span></td>
+                <td>mm</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>3250</td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>-</td>
+                <td>柴油 Diesel</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+
+          <div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#forklift-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="forklift-m80" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#forklift-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_013.png" alt="M80 内燃叉车 产品图" />
+
+          <div class="model-badge">产品型号 / Model：M80</div>
+
+          <h2 class="detail-title">M80 内燃叉车</h2>
+          <div class="detail-title-en">M80 Diesel Forklift</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">M80 内燃叉车适用于重型装卸和大型货物搬运，额定起重量 8000kg，适合高强度作业需求。</div>
+            <div class="detail-intro-en">The M80 diesel forklift is suitable for heavy loading and large cargo transport. With a rated lifting capacity of 8000 kg, it is designed for intensive working conditions.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>M80 内燃叉车 <span class="cn-en">M80 Diesel Forklift</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>内燃叉车 <span class="cn-en">Diesel Forklift</span></td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>柴油 Diesel</td>
+              </tr>
+            
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+</tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定起重量 <span class="cn-en">Rated Lifting Capacity</span></td>
+                <td>kg</td>
+                <td>8000</td>
+              </tr>
+              <tr>
+                <td>载荷中心距 <span class="cn-en">Load Center Distance</span></td>
+                <td>mm</td>
+                <td>600</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>3200</td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>-</td>
+                <td>柴油 Diesel</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+
+          <div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#forklift-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="forklift-y35" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#forklift-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_014.png" alt="Y35 越野叉车 产品图" />
+
+          <div class="model-badge">产品型号 / Model：Y35</div>
+
+          <h2 class="detail-title">Y35 越野叉车</h2>
+          <div class="detail-title-en">Y35 Off-road Forklift</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">Y35 越野叉车适用于复杂路面、工地及户外装卸环境，额定起重量 3500kg，具备较强通过性。</div>
+            <div class="detail-intro-en">The Y35 off-road forklift is suitable for rough terrain, construction sites, and outdoor loading conditions. With a rated lifting capacity of 3500 kg, it offers strong passability.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>Y35 越野叉车 <span class="cn-en">Y35 Off-road Forklift</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>越野叉车 <span class="cn-en">Off-road Forklift</span></td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>柴油 Diesel</td>
+              </tr>
+            
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+</tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定起重量 <span class="cn-en">Rated Lifting Capacity</span></td>
+                <td>kg</td>
+                <td>3500</td>
+              </tr>
+              <tr>
+                <td>载荷中心距 <span class="cn-en">Load Center Distance</span></td>
+                <td>mm</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>3720</td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>-</td>
+                <td>柴油 Diesel</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+
+          <div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#forklift-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="forklift-y45" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#forklift-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_015.png" alt="Y45 越野叉车 产品图" />
+
+          <div class="model-badge">产品型号 / Model：Y45</div>
+
+          <h2 class="detail-title">Y45 越野叉车</h2>
+          <div class="detail-title-en">Y45 Off-road Forklift</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">Y45 越野叉车适用于工地、场地转运及复杂路况搬运，额定起重量 4500kg，适合户外作业。</div>
+            <div class="detail-intro-en">The Y45 off-road forklift is suitable for construction sites, yard transport, and rough-road handling. With a rated lifting capacity of 4500 kg, it is well suited to outdoor operations.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>Y45 越野叉车 <span class="cn-en">Y45 Off-road Forklift</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>越野叉车 <span class="cn-en">Off-road Forklift</span></td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>柴油 Diesel</td>
+              </tr>
+            
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+</tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定起重量 <span class="cn-en">Rated Lifting Capacity</span></td>
+                <td>kg</td>
+                <td>4500</td>
+              </tr>
+              <tr>
+                <td>载荷中心距 <span class="cn-en">Load Center Distance</span></td>
+                <td>mm</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>3835</td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>-</td>
+                <td>柴油 Diesel</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+
+          <div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#forklift-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="forklift-y50" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#forklift-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_016.png" alt="Y50 越野叉车 产品图" />
+
+          <div class="model-badge">产品型号 / Model：Y50</div>
+
+          <h2 class="detail-title">Y50 越野叉车</h2>
+          <div class="detail-title-en">Y50 Off-road Forklift</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">Y50 越野叉车适用于户外重载搬运、工地作业等场景，额定起重量 5000kg，具备稳定的越野作业能力。</div>
+            <div class="detail-intro-en">The Y50 off-road forklift is suitable for outdoor heavy-duty transport and construction site work. With a rated lifting capacity of 5000 kg, it provides stable off-road performance.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>Y50 越野叉车 <span class="cn-en">Y50 Off-road Forklift</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>越野叉车 <span class="cn-en">Off-road Forklift</span></td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>柴油 Diesel</td>
+              </tr>
+            
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+</tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定起重量 <span class="cn-en">Rated Lifting Capacity</span></td>
+                <td>kg</td>
+                <td>5000</td>
+              </tr>
+              <tr>
+                <td>载荷中心距 <span class="cn-en">Load Center Distance</span></td>
+                <td>mm</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>4325</td>
+              </tr>
+              <tr>
+                <td>动力形式 <span class="cn-en">Power Type</span></td>
+                <td>-</td>
+                <td>柴油 Diesel</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+
+          <div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#forklift-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+
+  <section id="loader-q36" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_005.png" alt="Q36 Loader 装载机产品图" />
+
+          <div class="model-badge">产品型号 / Model：Q36</div>
+
+          <h2 class="detail-title">Q36 装载机</h2>
+          <div class="detail-title-en">Q36 Loader</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">Q36 装载机适用于工程作业、农业装卸、场地转运等使用场景。整机额定载重 1600kg，额定斗容 0.65m³，工作质量 3350kg，功率范围 36–83kW，具备灵活转向、稳定作业和较高装卸效率。</div>
+            <div class="detail-intro-en">The Q36 Loader is suitable for construction work, agricultural loading, material handling, and site transportation. With a rated load of 1600 kg, a rated bucket capacity of 0.65 m³, an operating weight of 3350 kg, and a power range of 36–83 kW, it offers flexible turning, stable operation, and efficient loading performance.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>Q36 装载机 <span class="cn-en">Q36 Loader</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>装载机 <span class="cn-en">Loader</span></td>
+              </tr>
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定载重 <span class="cn-en">Rated Load</span></td>
+                <td>kg</td>
+                <td>1600</td>
+              </tr>
+              <tr>
+                <td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td>
+                <td>m³</td>
+                <td>0.65</td>
+              </tr>
+              <tr>
+                <td>工作质量 <span class="cn-en">Operating Weight</span></td>
+                <td>kg</td>
+                <td>3350</td>
+              </tr>
+              <tr>
+                <td>卸载高度 <span class="cn-en">Dump Height</span></td>
+                <td>mm</td>
+                <td>3300</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>2680</td>
+              </tr>
+              <tr>
+                <td>功率范围 <span class="cn-en">Power</span></td>
+                <td>kW</td>
+                <td>36–83</td>
+              </tr>
+              <tr>
+                <td>外形尺寸 <span class="cn-en">Dimensions</span></td>
+                <td>mm</td>
+                <td>5490 × 1900 × 2740</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="loader-q38" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_005.png" alt="Q38 Loader 装载机产品图" />
+
+          <div class="model-badge">产品型号 / Model：Q38</div>
+
+          <h2 class="detail-title">Q38 装载机</h2>
+          <div class="detail-title-en">Q38 Loader</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">Q38 装载机适用于工程作业、农业装卸、场地转运等使用场景。整机额定载重 1750kg，额定斗容 0.65m³，工作质量 3690kg，卸载高度 3600mm，具备稳定作业和较高装卸效率。</div>
+            <div class="detail-intro-en">The Q38 Loader is suitable for construction work, agricultural loading, material handling, and site transportation. With a rated load of 1750 kg, a rated bucket capacity of 0.65 m³, an operating weight of 3690 kg, and a dump height of 3600 mm, it provides stable operation and efficient loading performance.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>Q38 装载机 <span class="cn-en">Q38 Loader</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>装载机 <span class="cn-en">Loader</span></td>
+              </tr>
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定载重 <span class="cn-en">Rated Load</span></td>
+                <td>kg</td>
+                <td>1750</td>
+              </tr>
+              <tr>
+                <td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td>
+                <td>m³</td>
+                <td>0.65</td>
+              </tr>
+              <tr>
+                <td>工作质量 <span class="cn-en">Operating Weight</span></td>
+                <td>kg</td>
+                <td>3690</td>
+              </tr>
+              <tr>
+                <td>卸载高度 <span class="cn-en">Dump Height</span></td>
+                <td>mm</td>
+                <td>3600</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>2850</td>
+              </tr>
+              <tr>
+                <td>功率范围 <span class="cn-en">Power</span></td>
+                <td>kW</td>
+                <td>36–83</td>
+              </tr>
+              <tr>
+                <td>外形尺寸 <span class="cn-en">Dimensions</span></td>
+                <td>mm</td>
+                <td>5720 × 2150 × 2770</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+
+  <section id="loader-oy26-oy26p" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_006.png" alt="OY26 / OY26P Loader 装载机产品图" />
+
+          <div class="model-badge">产品型号 / Model：OY26 / OY26P</div>
+
+          <h2 class="detail-title">OY26 / OY26P 装载机</h2>
+          <div class="detail-title-en">OY26 / OY26P Loader</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">OY26 / OY26P 装载机适用于工程作业、农业装卸、场地转运等使用场景。整机额定载重 1380kg，额定斗容 0.65m³，工作质量 3350kg，功率范围 36–83kW，具备灵活转向和稳定作业能力。</div>
+            <div class="detail-intro-en">The OY26 / OY26P Loader is suitable for construction work, agricultural loading, material handling, and site transportation. With a rated load of 1380 kg, a rated bucket capacity of 0.65 m³, an operating weight of 3350 kg, and a power range of 36–83 kW, it offers flexible turning and stable operation.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>OY26 / OY26P 装载机 <span class="cn-en">OY26 / OY26P Loader</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>装载机 <span class="cn-en">Loader</span></td>
+              </tr>
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定载重 <span class="cn-en">Rated Load</span></td>
+                <td>kg</td>
+                <td>1380</td>
+              </tr>
+              <tr>
+                <td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td>
+                <td>m³</td>
+                <td>0.65</td>
+              </tr>
+              <tr>
+                <td>工作质量 <span class="cn-en">Operating Weight</span></td>
+                <td>kg</td>
+                <td>3350</td>
+              </tr>
+              <tr>
+                <td>卸载高度 <span class="cn-en">Dump Height</span></td>
+                <td>mm</td>
+                <td>3000 / 3200</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>2715</td>
+              </tr>
+              <tr>
+                <td>功率范围 <span class="cn-en">Power</span></td>
+                <td>kW</td>
+                <td>36–83</td>
+              </tr>
+              <tr>
+                <td>外形尺寸 <span class="cn-en">Dimensions</span></td>
+                <td>mm</td>
+                <td>5640 × 1950 × 2200</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="loader-b20" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_007.png" alt="B20 Loader 装载机产品图" />
+
+          <div class="model-badge">产品型号 / Model：B20</div>
+
+          <h2 class="detail-title">B20 装载机</h2>
+          <div class="detail-title-en">B20 Loader</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">B20 装载机适用于小型场地转运、轻量装卸和日常搬运作业。整机额定载重 900kg，额定斗容 0.3m³，工作质量 2240kg，结构紧凑，适合空间较小的作业环境。</div>
+            <div class="detail-intro-en">The B20 Loader is suitable for small-site transportation, light loading, and daily handling tasks. With a rated load of 900 kg, a rated bucket capacity of 0.3 m³, and an operating weight of 2240 kg, it is compact and suitable for limited working spaces.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>B20 装载机 <span class="cn-en">B20 Loader</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>装载机 <span class="cn-en">Loader</span></td>
+              </tr>
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定载重 <span class="cn-en">Rated Load</span></td>
+                <td>kg</td>
+                <td>900</td>
+              </tr>
+              <tr>
+                <td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td>
+                <td>m³</td>
+                <td>0.3</td>
+              </tr>
+              <tr>
+                <td>工作质量 <span class="cn-en">Operating Weight</span></td>
+                <td>kg</td>
+                <td>2240</td>
+              </tr>
+              <tr>
+                <td>卸载高度 <span class="cn-en">Dump Height</span></td>
+                <td>mm</td>
+                <td>2400</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>2660</td>
+              </tr>
+              <tr>
+                <td>功率范围 <span class="cn-en">Power</span></td>
+                <td>kW</td>
+                <td>36.8</td>
+              </tr>
+              <tr>
+                <td>外形尺寸 <span class="cn-en">Dimensions</span></td>
+                <td>mm</td>
+                <td>4460 × 1550 × 1575</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="loader-b30" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_007.png" alt="B30 Loader 装载机产品图" />
+
+          <div class="model-badge">产品型号 / Model：B30</div>
+
+          <h2 class="detail-title">B30 装载机</h2>
+          <div class="detail-title-en">B30 Loader</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">B30 装载机适用于小型工程、农用装卸、仓储转运等场景。整机额定载重 1100kg，额定斗容 0.4m³，卸载高度 3000mm，具备较好的灵活性和实用性。</div>
+            <div class="detail-intro-en">The B30 Loader is suitable for small construction work, agricultural loading, and warehouse transportation. With a rated load of 1100 kg, a rated bucket capacity of 0.4 m³, and a dump height of 3000 mm, it provides good flexibility and practicality.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>B30 装载机 <span class="cn-en">B30 Loader</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>装载机 <span class="cn-en">Loader</span></td>
+              </tr>
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定载重 <span class="cn-en">Rated Load</span></td>
+                <td>kg</td>
+                <td>1100</td>
+              </tr>
+              <tr>
+                <td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td>
+                <td>m³</td>
+                <td>0.4</td>
+              </tr>
+              <tr>
+                <td>工作质量 <span class="cn-en">Operating Weight</span></td>
+                <td>kg</td>
+                <td>2500</td>
+              </tr>
+              <tr>
+                <td>卸载高度 <span class="cn-en">Dump Height</span></td>
+                <td>mm</td>
+                <td>3000</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>3180</td>
+              </tr>
+              <tr>
+                <td>功率范围 <span class="cn-en">Power</span></td>
+                <td>kW</td>
+                <td>36.8</td>
+              </tr>
+              <tr>
+                <td>外形尺寸 <span class="cn-en">Dimensions</span></td>
+                <td>mm</td>
+                <td>4970 × 1655 × 2280</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="loader-zl936z" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_008.png" alt="ZL936Z Loader 装载机产品图" />
+
+          <div class="model-badge">产品型号 / Model：ZL936Z</div>
+
+          <h2 class="detail-title">ZL936Z 装载机</h2>
+          <div class="detail-title-en">ZL936Z Loader</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">ZL936Z 装载机适用于工程作业、农业装卸和场地转运等多种场景。整机额定载重 1600kg，额定斗容 0.65m³，工作质量 3660kg，功率范围 36–83kW，适合日常装卸使用。</div>
+            <div class="detail-intro-en">The ZL936Z Loader is suitable for construction work, agricultural loading, and site transportation. With a rated load of 1600 kg, a rated bucket capacity of 0.65 m³, an operating weight of 3660 kg, and a power range of 36–83 kW, it is well suited for daily loading tasks.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>ZL936Z 装载机 <span class="cn-en">ZL936Z Loader</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>装载机 <span class="cn-en">Loader</span></td>
+              </tr>
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定载重 <span class="cn-en">Rated Load</span></td>
+                <td>kg</td>
+                <td>1600</td>
+              </tr>
+              <tr>
+                <td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td>
+                <td>m³</td>
+                <td>0.65</td>
+              </tr>
+              <tr>
+                <td>工作质量 <span class="cn-en">Operating Weight</span></td>
+                <td>kg</td>
+                <td>3660</td>
+              </tr>
+              <tr>
+                <td>卸载高度 <span class="cn-en">Dump Height</span></td>
+                <td>mm</td>
+                <td>3200</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>2750</td>
+              </tr>
+              <tr>
+                <td>功率范围 <span class="cn-en">Power</span></td>
+                <td>kW</td>
+                <td>36–83</td>
+              </tr>
+              <tr>
+                <td>外形尺寸 <span class="cn-en">Dimensions</span></td>
+                <td>mm</td>
+                <td>5650 × 1940 × 2720</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+  <section id="loader-zl936zp" class="page overlay-page">
+    <main class="page-main">
+      <div class="wrap">
+        <a class="back-btn" href="#loader-models">← 返回车型选择 / Back to Model Selection</a>
+
+        <div class="detail-card">
+          <img class="detail-image" src="images/img_008.png" alt="ZL936ZP Loader 装载机产品图" />
+
+          <div class="model-badge">产品型号 / Model：ZL936ZP</div>
+
+          <h2 class="detail-title">ZL936ZP 装载机</h2>
+          <div class="detail-title-en">ZL936ZP Loader</div>
+
+          <div class="detail-intro">
+            <div class="detail-intro-cn">ZL936ZP 装载机适用于更高卸载需求和多种装卸作业场景。整机额定载重 1700kg，额定斗容 1.8m³，工作质量 5180kg，卸载高度 4800mm，适合对作业高度和装载效率有更高要求的客户。</div>
+            <div class="detail-intro-en">The ZL936ZP Loader is suitable for higher dump-height requirements and various loading operations. With a rated load of 1700 kg, a rated bucket capacity of 1.8 m³, an operating weight of 5180 kg, and a dump height of 4800 mm, it is suitable for customers who need higher working reach and loading efficiency.</div>
+          </div>
+
+          <h3 class="section-heading">产品信息<span>Product Information</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>内容 / Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>产品名称 <span class="cn-en">Product Name</span></td>
+                <td>ZL936ZP 装载机 <span class="cn-en">ZL936ZP Loader</span></td>
+              </tr>
+              <tr>
+                <td>品牌 <span class="cn-en">Brand</span></td>
+                <td>明宇重工 / MYZG</td>
+              </tr>
+              <tr>
+                <td>产品类别 <span class="cn-en">Product Category</span></td>
+                <td>装载机 <span class="cn-en">Loader</span></td>
+              </tr>
+              <tr>
+                <td>详情咨询 <span class="cn-en">Contact for Details</span></td>
+                <td>联系方式：13396795717 刘老板；地址：浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工；二维码：<span class="cn-en">Contact, Address, QR Code</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="section-heading">产品参数<span>Product Parameters</span></h3>
+          <table class="param-table">
+            <thead>
+              <tr>
+                <th>项目 / Category</th>
+                <th>单位 / Unit</th>
+                <th>参数 / Parameter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>额定载重 <span class="cn-en">Rated Load</span></td>
+                <td>kg</td>
+                <td>1700</td>
+              </tr>
+              <tr>
+                <td>额定斗容 <span class="cn-en">Rated Bucket Capacity</span></td>
+                <td>m³</td>
+                <td>1.8</td>
+              </tr>
+              <tr>
+                <td>工作质量 <span class="cn-en">Operating Weight</span></td>
+                <td>kg</td>
+                <td>5180</td>
+              </tr>
+              <tr>
+                <td>卸载高度 <span class="cn-en">Dump Height</span></td>
+                <td>mm</td>
+                <td>4800</td>
+              </tr>
+              <tr>
+                <td>最小转弯半径 <span class="cn-en">Min. Turning Radius</span></td>
+                <td>mm</td>
+                <td>4050</td>
+              </tr>
+              <tr>
+                <td>功率范围 <span class="cn-en">Power</span></td>
+                <td>kW</td>
+                <td>52–83</td>
+              </tr>
+              <tr>
+                <td>外形尺寸 <span class="cn-en">Dimensions</span></td>
+                <td>mm</td>
+                <td>7280 × 2190 × 2990</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3 class="section-heading">详情咨询<span>Contact for Details</span></h3>
+          <div class="features">
+            <div class="feature-item">
+              <div class="feature-cn">联系方式</div>
+              <div class="feature-en">13396795717 刘老板</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">地址</div>
+              <div class="feature-en">浙江省金华市义乌市江东街道稠廿路1号淘源电子商务1层明宇重工</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-cn">二维码</div>
+              <div class="feature-en">QR Code</div>
+            </div>
+          </div>
+<div class="bottom-back-wrap">
+            <a class="bottom-back-btn" href="#loader-models">
+              返回上一级
+              <span>Back to Previous Level</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      义乌市刘鑫机械设备公司
+      <span class="footer-en">Yiwu Liuxin Machinery Equipment Company</span>
+    </footer>
+  </section>
+
+</body>
+</html>
